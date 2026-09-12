@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -76,7 +77,6 @@
 
         .glass::before {
             content: "";
-            position: absolute;
             inset: -40% -20%;
             background:
                 radial-gradient(640px 320px at 0% 0%, rgba(255, 183, 77, 0.25) 0%, transparent 60%),
@@ -638,34 +638,11 @@
                 top: 20px;
                 left: 50%;
                 right: auto;
-                transform: translateX(-50%);
                 width: 45px;
                 height: 45px;
                 font-size: 20px;
                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
                 -webkit-tap-highlight-color: transparent;
-            }
-
-            #musicBtn:active {
-                transform: translateX(-50%) scale(0.9);
-            }
-        }
-
-        #musicBtn:active {
-            transform: translateX(-50%) scale(0.9);
-        }
-
-        @media (max-width: 480px) {
-            .center-title {
-                display: block !important;
-                text-align: center !important;
-                font-size: 16px !important;
-                width: 100% !important;
-                white-space: nowrap !important;
-                margin-top: 20px !important;
-                margin-bottom: 10px !important;
-                padding: 0 !important;
-                transform: none !important;
             }
 
             .center-title * {
@@ -738,9 +715,7 @@
             }
 
             .center-title {
-                position: absolute;
                 left: 55%;
-                transform: translateX(-50%);
                 margin-left: 0 !important;
                 text-align: center;
                 width: max-content;
